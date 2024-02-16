@@ -1,0 +1,11 @@
+Model Information:
+* title:	Gorilla Tag Fan Game Tree
+* source:	https://sketchfab.com/3d-models/gorilla-tag-fan-game-tree-4f94c37920cc42a38b4cda93d3884979
+* author:	rhinorandal (https://sketchfab.com/rhinorandal)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Gorilla Tag Fan Game Tree" (https://sketchfab.com/3d-models/gorilla-tag-fan-game-tree-4f94c37920cc42a38b4cda93d3884979) by rhinorandal (https://sketchfab.com/rhinorandal) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

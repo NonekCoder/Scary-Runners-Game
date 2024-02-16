@@ -47,6 +47,7 @@ namespace Photon.VR
         public PhotonVRPlayer LocalPlayer;
 
         private RoomOptions options;
+        [SerializeField] GameObject walloftruth;
 
         private ConnectionState State = ConnectionState.Disconnected;
 
@@ -191,6 +192,7 @@ namespace Photon.VR
         public void Disconnect()
         {
             PhotonNetwork.Disconnect();
+            walloftruth.SetActive(true);
         }
 
         /// <summary>
@@ -288,13 +290,20 @@ namespace Photon.VR
         {
             State = ConnectionState.Connected;
             Debug.Log("Connected");
+            Invoke("Bepatient", 3f);
+        }
 
+        public void Bepatient()
+        {
             PhotonNetwork.LocalPlayer.NickName = PlayerPrefs.GetString("Username");
             PhotonNetwork.LocalPlayer.CustomProperties["Colour"] = JsonUtility.ToJson(Colour);
             PhotonNetwork.LocalPlayer.CustomProperties["Cosmetics"] = Cosmetics;
 
             if (JoinRoomOnConnect)
+            {
                 JoinRandomRoom(DefaultQueue, DefaultRoomLimit);
+                walloftruth.SetActive(false);
+            }    
         }
 
         /// <summary>

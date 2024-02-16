@@ -40,6 +40,7 @@ namespace Photon.Pun
         public string prefabName;
         public Player creator;
         public int timestamp;
+        
 
         public InstantiateParameters(string prefabName, Vector3 position, Quaternion rotation, byte @group, object[] data, byte objLevelPrefix, int[] viewIDs, Player creator, int timestamp)
         {

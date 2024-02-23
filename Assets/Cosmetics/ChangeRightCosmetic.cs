@@ -11,7 +11,6 @@ public class ChangeRightCosmetic : MonoBehaviour
         if (other.gameObject.CompareTag("HandTag"))
         {
             PhotonVRManager.SetCosmetic("RightHand", Right);
-            Debug.Log("Kliknieto!");
         }
     }
 }

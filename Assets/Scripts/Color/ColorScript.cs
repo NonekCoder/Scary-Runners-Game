@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.VR;
+using TMPro;
 
 public class ColorScript : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class ColorScript : MonoBehaviour
     float TrueRed;
     float TrueBlue;
     float TrueGreen;
+    public TextMeshPro ColorCode;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,8 @@ public class ColorScript : MonoBehaviour
 
         Color myColour = new Color(TrueRed, TrueBlue, TrueGreen);
         PhotonVRManager.SetColour(myColour);
+
+        ColorCode.text = "Color code:\nRed: " + TrueRed*10 + "\nGreen: " + TrueGreen*10 + "\nBlue: " + TrueBlue*10;
     }
 
 }

@@ -10,11 +10,11 @@ public class InRoom : MonoBehaviour
     {
         if (PhotonNetwork.InRoom)
         {
-            Text.text = "In Room: " + PhotonNetwork.CurrentRoom.Name;
+            Text.text = "In Room: \n" + PhotonNetwork.CurrentRoom.Name;
         }
         else if (!PhotonNetwork.InRoom)
         {
-            Text.text = "In Room: NOT CONNECTED";
+            Text.text = "In Room: \nNOT CONNECTED";
         }
     }
 }

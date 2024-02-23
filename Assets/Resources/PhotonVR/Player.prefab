@@ -2072,7 +2072,7 @@ MonoBehaviour:
   LeftHand: {fileID: 752089353315546107}
   RightHand: {fileID: 2837222685369851332}
   ColourObjects:
-  - {fileID: 0}
+  - {fileID: 274937292090167430}
   CosmeticSlots:
   - SlotName: Head
     Object: {fileID: 182381451631106285}
@@ -2710,13 +2710,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7204393254193173488}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0, w: -1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalRotation: {x: -0.00000007450581, y: 0.00000041723257, z: 0.963624, w: -0.2672617}
+  m_LocalPosition: {x: -0.472, y: -0.16, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9099523379349981893}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -148.997}
 --- !u!137 &6042610626335463670
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0

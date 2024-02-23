@@ -7,6 +7,7 @@ public class TabChanger : MonoBehaviour
     [SerializeField] int number;
     [SerializeField] GameObject name;
     [SerializeField] GameObject color;
+    [SerializeField] GameObject code;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,11 +25,19 @@ public class TabChanger : MonoBehaviour
         {
             color.SetActive(false);
             name.SetActive(true);
+            code.SetActive(false);
         }
         if(number==2)
         {
             color.SetActive(true);
             name.SetActive(false);
+            code.SetActive(false);
+        }
+        if(number==3)
+        {
+            color.SetActive(false);
+            name.SetActive(false);
+            code.SetActive(true);
         }
     }
 }

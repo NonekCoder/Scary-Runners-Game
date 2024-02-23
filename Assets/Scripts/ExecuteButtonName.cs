@@ -16,7 +16,7 @@ public class ExecuteButtonName : MonoBehaviour
     {
         if (nameScript.NameVar.Length < 1)
         {
-            PhotonVRManager.SetUsername("steve" + Random.Range(0, 1000).ToString());
+            PhotonVRManager.SetUsername("Monke" + Random.Range(0, 1000).ToString());
         }
         if (other.transform.tag == Handtag)
         {

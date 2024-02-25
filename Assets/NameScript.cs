@@ -14,7 +14,7 @@ public class NameScript : MonoBehaviour
         {
             NameVar = NameVar.Substring(0, 12);
         }
-        NameText.text = NameVar;
+        NameText.text = "Name: " + NameVar;
         PhotonVRManager.SetUsername(NameVar);
     }
 }

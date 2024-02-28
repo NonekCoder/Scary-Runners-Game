@@ -44,6 +44,9 @@ MonoBehaviour:
   - RespawnSpaceship
   - RPCRefreshPlayerValues
   - KickPlayer
+  - DisableReady
+  - EnableObject
+  - DisableObject
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0

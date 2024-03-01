@@ -6,10 +6,8 @@ using Photon.Pun;
 
 public class NukeAnimationTrigger : MonoBehaviourPunCallbacks
 {
-    [SerializeField] PlayableDirector cutScene;
     [SerializeField] GameObject cancel;
     [SerializeField] GameObject ready;
-    [SerializeField] GameObject nukemusic;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,18 +23,11 @@ public class NukeAnimationTrigger : MonoBehaviourPunCallbacks
     {
         if(other.CompareTag("HandTag"))
         {
-            cutScene.Play();
             Invoke(nameof(EnableReady), 90f);
         }
     }
     void EnableReady()
     {
         ready.SetActive(true);
-        photonView.RPC("DisableReady", RpcTarget.AllBuffered);
-    }
-    [PunRPC]
-    void DisableReady()
-    {
-        nukemusic.SetActive(false);
     }
 }

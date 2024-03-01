@@ -5,11 +5,8 @@ using UnityEngine.Playables;
 
 public class CancelNuke : MonoBehaviour
 {
-    [SerializeField] GameObject music;
     [SerializeField] GameObject cancelandkill;
     [SerializeField] GameObject ready;
-    [SerializeField] PlayableDirector cutScene;
-    [SerializeField] GameObject nuke;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +22,8 @@ public class CancelNuke : MonoBehaviour
     {
         if(other.CompareTag("HandTag"))
         {
-            music.SetActive(false);
             cancelandkill.SetActive(false);
             ready.SetActive(false);
-            cutScene.Stop();
-            nuke.SetActive(false);
         }
     }
 }

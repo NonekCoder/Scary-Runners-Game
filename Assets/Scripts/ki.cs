@@ -5,6 +5,7 @@ using UnityEngine;
 public class ki : MonoBehaviour
 {
     public Transform gorillaPlayer;
+    public Transform monster;
     public Transform respawnPoint;
     public List<GameObject> mapsToDisable;
     public float delayBeforeReEnabling;
@@ -12,11 +13,28 @@ public class ki : MonoBehaviour
     public GameObject jumpscareObject;
     public float jumpscareDuration;
     public bool isJumpscaring = true;
+    float distanceToMonster;
 
 
+    void Update()
+    {
+        distanceToMonster = Vector3.Distance(gorillaPlayer.position, monster.position);
+        if(distanceToMonster<1f)
+        {
+            StartCoroutine(TeleportPlayer());
+
+            if (isJumpscaring)
+            {
+                isJumpscaring = false;
+                jumpscareObject.SetActive(true);
+
+                Invoke("DisableJumpscare", jumpscareDuration);
+            }
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("HandTag") || other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("HandTag"))
         {
             StartCoroutine(TeleportPlayer());
 

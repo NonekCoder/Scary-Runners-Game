@@ -16,8 +16,7 @@ public class PlayerTeleporter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Check if the player's Y position is below -100
-        if (playerTransform.position.y < -100f)
+        if (playerTransform.position.y < -200f)
         {
             // Teleport the player to the specified position
             TeleportPlayer();

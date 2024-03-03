@@ -8,6 +8,7 @@ public class TriggerTp : MonoBehaviour
     public Transform tpPoint;
     public List<GameObject> mapsToDisable;
     public float timeBeforeTeleport;
+    
     // Start is called before the first frame update
     void Start()
     {
